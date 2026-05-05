@@ -13,6 +13,7 @@ export const translations = {
     info_desc:
       "Scool est l'outil scolaire tout-en-un lié à **scool.qzz.io**.\nOrganise ta vie académique directement depuis Discord.",
     info_field_version: "Version",
+    info_field_tsversion: "ts-node -v",
     info_field_status: "Statut",
     info_field_status_value: "En développement actif",
     info_field_website: "Site web",
@@ -77,6 +78,7 @@ export const translations = {
     info_desc:
       "Scool is the all-in-one academic tool linked to **scool.qzz.io**.\nOrganize your school life directly from Discord.",
     info_field_version: "Version",
+    info_field_tsversion: "ts-node -v",
     info_field_status: "Status",
     info_field_status_value: "Actively in development",
     info_field_website: "Website",
