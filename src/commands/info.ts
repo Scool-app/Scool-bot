@@ -4,7 +4,8 @@ import { createEmbed, Colors, Emojis } from "../utils/embeds";
 import { getOrCreateConfig } from "../config/GuildConfig";
 import { t } from "../utils/i18n";
 
-const VERSION = "0.1.0";
+const VERSION = "1.0.4";
+const TSVERSION = "10.9.2"
 
 export const info: Command = {
   data: new SlashCommandBuilder()
@@ -22,6 +23,11 @@ export const info: Command = {
         {
           name: t(lang, "info_field_version"),
           value: `\`v${VERSION}\``,
+          inline: true,
+        },
+        {
+          name: t(lang, "info_field_tsversion"),
+          value: `\`v${TSVERSION}\``,
           inline: true,
         },
         {
