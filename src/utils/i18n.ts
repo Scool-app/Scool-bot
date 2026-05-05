@@ -64,10 +64,10 @@ export const translations = {
     welcome_button_fr: "Français",
     welcome_button_en: "English",
 
-    ghub_title: "Notre Github",
-    ghub_desc: "Voici l'endroit où on travaille dûr pour le développement de Scool !",
-    ghub_founders: "Adouche et Alexis",
-    ghub_founder: "Fondateurs",
+    social_title: "Nos liens sociaux",
+    social_desc: "N'hésitez pas à nous follow et à follow l'organisation Scool !",
+    social_founders: "Adouche et Alexis",
+    social_founder: "Fondateurs",
 
     error_generic: "Une erreur est survenue. Réessaie plus tard.",
     not_configured: "Ce serveur n'est pas encore configuré. Un administrateur doit lancer `/setup`.",
@@ -128,10 +128,10 @@ export const translations = {
     welcome_button_fr: "Français",
     welcome_button_en: "English",
 
-    ghub_title: "Our Github",
-    ghub_desc: "This is the place where we are working hard on the Scool's development !",
-    ghub_founders: "Adouche and Alexis",
-    ghub_founder: "Founders",
+    social_title: "Our social links",
+    social_desc: "Don't hesitate to follow us and follow the Scool organization !",
+    social_founders: "Adouche and Alexis",
+    social_founder: "Founders",
 
     error_generic: "An error occurred. Please try again later.",
     not_configured: "This server is not configured yet. An administrator should run `/setup`.",
