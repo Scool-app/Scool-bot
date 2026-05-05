@@ -23,6 +23,7 @@ export const Emojis = {
   ERROR: "❌",
   ARROW: "›",
   DOT: "·",
+  GHUB: "💻",
 };
 
 
