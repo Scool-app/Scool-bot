@@ -12,7 +12,7 @@ import { t } from "../utils/i18n";
 
 const GHUB_URL = "https://github.com/scool-app"
 
-export const info: Command = {
+export const github: Command = {
   data: new SlashCommandBuilder()
     .setName("github")
     .setDescription("Our Github / Notre Github"),
