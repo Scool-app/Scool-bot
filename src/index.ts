@@ -31,6 +31,15 @@ const commands = new Collection<string, Command>();
 client.once("ready", (c) => {
   console.log(`\n  Scool is online — logged in as ${c.user.tag}`);
   console.log(`  Serving ${c.guilds.cache.size} guild(s)\n`);
+  client.user?.setPresence({
+    status: 'dnd', 
+    activities: [
+      {
+        name: 'scoolapp.fr',
+        type: 3 
+      }
+    ]
+  });
 });
 
 client.on("guildCreate", onGuildCreate);
