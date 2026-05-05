@@ -10,9 +10,9 @@ import { createEmbed, Colors, Emojis } from "../utils/embeds";
 import { getOrCreateConfig } from "../config/GuildConfig";
 import { t } from "../utils/i18n";
 
-// remplacer
+
 const INVITE_URL =
-  "https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands";
+  "https://discord.com/oauth2/authorize?client_id=1500944923560509450&permissions=8&integration_type=0&scope=bot+applications.commands";
 
 export const invite: Command = {
   data: new SlashCommandBuilder()
