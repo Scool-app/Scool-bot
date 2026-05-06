@@ -24,6 +24,7 @@ export const Emojis = {
   ARROW: "›",
   DOT: "·",
   GHUB: "💻",
+  SITE: "📱",
 };
 
 
