@@ -69,6 +69,10 @@ export const translations = {
     social_founders: "Adouche et Alexis",
     social_founder: "Fondateurs",
 
+    site_title: "Notre site",
+    site_desc: "Voici [scool.qzz.io](https://scool.qzz.io) notre site officiel ! \n Cliquez sur le bouton ci-dessous !",
+    site_button: "scool.qzz.io",
+
     error_generic: "Une erreur est survenue. Réessaie plus tard.",
     not_configured: "Ce serveur n'est pas encore configuré. Un administrateur doit lancer `/setup`.",
   },
@@ -132,6 +136,10 @@ export const translations = {
     social_desc: "Don't hesitate to follow us and follow the Scool organization !",
     social_founders: "Adouche and Alexis",
     social_founder: "Founders",
+
+    site_title: "Our website",
+    site_desc: "This is [scool.qzz.io](https://scool.qzz.io) our official website ! \n Click on the button down below !",
+    site_button: "scool.qzz.io",
 
     error_generic: "An error occurred. Please try again later.",
     not_configured: "This server is not configured yet. An administrator should run `/setup`.",
