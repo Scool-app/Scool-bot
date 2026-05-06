@@ -8,6 +8,7 @@ import { soon } from "./commands/soon";
 import { invite } from "./commands/invite";
 import { setup } from "./commands/setup";
 import { social } from "./commands/social";
+import { site } from "./commands/site";
 
 const { DISCORD_TOKEN, CLIENT_ID } = process.env;
 if (!DISCORD_TOKEN || !CLIENT_ID) {
@@ -15,7 +16,7 @@ if (!DISCORD_TOKEN || !CLIENT_ID) {
   process.exit(1);
 }
 
-const commands = [ping, info, help, soon, invite, setup, social,].map((cmd) =>
+const commands = [ping, info, help, soon, invite, setup, social, site,].map((cmd) =>
   cmd.data.toJSON()
 );
 
