@@ -1,13 +1,15 @@
 {
   "name": "scool-bot",
   "version": "0.1.0",
-  "description": "Scool — The academic Discord bot linked to scool.qzz.io",
+  "description": "Your first-rate Discord bot for monitoring school life.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
+    "dev": "tsup -w",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
-    "deploy": "ts-node src/deploy-commands.ts"
+    "deploy": "ts-node src/deploy-commands.ts",
+    "format": "prettier --write .",
+    "check": "prettier --check ."
   },
   "dependencies": {
     "discord.js": "^14.14.1",
@@ -17,6 +19,8 @@
   "devDependencies": {
     "@types/node": "^20.11.25",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "tsup": "^8.0.0",
+    "prettier": "^3.0.0"
   }
 }

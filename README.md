@@ -55,24 +55,27 @@ If you wish to deploy your own instance or contribute to development, follow the
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/Scool-app/Scool-bot.git
    cd Scool-bot
    ```
 
 2. **Install dependencies:**
-   
+
    With npm:
+
    ```bash
    npm install
    ```
 
    With Bun:
+
    ```bash
    bun install
    ```
 
-4. **Configure environment variables:**
+3. **Configure environment variables:**
    Create a `.env` file in the root directory:
    ```env
    DISCORD_TOKEN=your_bot_token
@@ -83,26 +86,30 @@ If you wish to deploy your own instance or contribute to development, follow the
 ### Deployment
 
 1. **Register Slash Commands:**
-   
+
    With npm:
+
    ```bash
    npm run deploy
    ```
 
    With Bun:
+
    ```bash
    bun run deploy
    ```
 
-3. **Build and Start:**
+2. **Build and Start:**
 
    With npm:
+
    ```bash
    npm run build
    npm start
    ```
 
    With Bun:
+
    ```bash
    bun run build
    bun start
@@ -111,11 +118,13 @@ If you wish to deploy your own instance or contribute to development, follow the
 **For development with hot-reload:**
 
 With npm:
+
 ```bash
 npm run dev
 ```
 
 With Bun:
+
 ```bash
 bun run dev
 ```
@@ -127,28 +136,28 @@ bun run dev
 <details>
 <summary><b>General Commands</b></summary>
 
-| Command | Description |
-| :--- | :--- |
-| `/help` | List all available commands. |
-| `/info` | Get information about Scool and its status. |
-| `/invite` | Get the official invite link for the bot. |
-| `/ping` | Check the bot's WebSocket and API latency. |
-| `/site` | Access the official Scool website. |
+| Command   | Description                                   |
+| :-------- | :-------------------------------------------- |
+| `/help`   | List all available commands.                  |
+| `/info`   | Get information about Scool and its status.   |
+| `/invite` | Get the official invite link for the bot.     |
+| `/ping`   | Check the bot's WebSocket and API latency.    |
+| `/site`   | Access the official Scool website.            |
 | `/social` | Discover our social media links and founders. |
-| `/soon` | View the roadmap for upcoming features. |
+| `/soon`   | View the roadmap for upcoming features.       |
 
 </details>
 
 <details>
 <summary><b>Administration Commands</b></summary>
 
-| Command | Description |
-| :--- | :--- |
-| `/setup view` | Display the current server configuration. |
-| `/setup language` | Set the bot's language (English/French). |
-| `/setup channel` | Configure the announcement channel. |
-| `/setup role` | Define the administrator role for Scool. |
-| `/setup logs` | Set the channel where logs will be sent. |
+| Command           | Description                               |
+| :---------------- | :---------------------------------------- |
+| `/setup view`     | Display the current server configuration. |
+| `/setup language` | Set the bot's language (English/French).  |
+| `/setup channel`  | Configure the announcement channel.       |
+| `/setup role`     | Define the administrator role for Scool.  |
+| `/setup logs`     | Set the channel where logs will be sent.  |
 
 </details>
 
