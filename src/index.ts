@@ -9,6 +9,7 @@ import { soon } from "./commands/soon";
 import { invite } from "./commands/invite";
 import { setup } from "./commands/setup";
 import { social } from "./commands/social";
+import { site } from "./commands/site";
 import { onGuildCreate } from "./events/guildCreate";
 import { createInteractionHandler } from "./events/interactionCreate";
 
@@ -24,7 +25,7 @@ const client = new Client({
 });
 
 const commands = new Collection<string, Command>();
-[ping, info, help, soon, invite, setup, social,].forEach((cmd) => {
+[ping, info, help, soon, invite, setup, social, site,].forEach((cmd) => {
   commands.set(cmd.data.name, cmd);
 });
 
