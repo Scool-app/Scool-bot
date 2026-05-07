@@ -1,4 +1,4 @@
-import { EmbedBuilder, ColorResolvable } from "discord.js";
+import { EmbedBuilder, ColorResolvable } from 'discord.js'
 
 export const Colors = {
   WHITE: 0xffffff as ColorResolvable,
@@ -8,51 +8,57 @@ export const Colors = {
   ACCENT: 0xe0e0e0 as ColorResolvable,
   ERROR: 0xff4444 as ColorResolvable,
   SUCCESS: 0x44ff88 as ColorResolvable,
-};
+}
 
 export const Emojis = {
-  SCOOL: "🎓",
-  PING: "📡",
-  INFO: "📋",
-  HELP: "📚",
-  SOON: "🔮",
-  SETUP: "⚙️",
-  INVITE: "🔗",
-  LANG: "🌐",
-  SUCCESS: "✅",
-  ERROR: "❌",
-  ARROW: "›",
-  DOT: "·",
-  GHUB: "💻",
-  SITE: "📱",
-};
+  SCOOL: '🎓',
+  PING: '📡',
+  INFO: '📋',
+  HELP: '📚',
+  SOON: '🔮',
+  SETUP: '⚙️',
+  INVITE: '🔗',
+  LANG: '🌐',
+  SUCCESS: '✅',
+  ERROR: '❌',
+  ARROW: '›',
+  DOT: '·',
+  GHUB: '💻',
+  SITE: '📱',
+}
 
-
-export function createEmbed(color: ColorResolvable = Colors.WHITE): EmbedBuilder {
+export function createEmbed(
+  color: ColorResolvable = Colors.WHITE,
+): EmbedBuilder {
   return new EmbedBuilder()
     .setColor(color)
     .setFooter({
+<<<<<<< HEAD
       text: "Scool · scool.qzz.io",
       iconURL: "https://cdn.discordapp.com/app-icons/1500944923560509450/689515c8752ca5ef0e25d0028e593c6f.png?size=64",
+=======
+      text: 'Scool · scoolapp.fr',
+      iconURL:
+        'https://cdn.discordapp.com/app-icons/1500944923560509450/689515c8752ca5ef0e25d0028e593c6f.png?size=64',
+>>>>>>> 4e0ee998d9588fd2c4098ee1baa878a4cd8d2e3b
     })
-    .setTimestamp();
+    .setTimestamp()
 }
-
 
 export function successEmbed(title: string, description: string): EmbedBuilder {
   return createEmbed(Colors.WHITE)
     .setTitle(`${Emojis.SUCCESS}  ${title}`)
-    .setDescription(`\`\`\`\n${description}\n\`\`\``);
+    .setDescription(`\`\`\`\n${description}\n\`\`\``)
 }
 
 export function errorEmbed(description: string): EmbedBuilder {
   return createEmbed(Colors.ERROR)
     .setTitle(`${Emojis.ERROR}  Something went wrong`)
-    .setDescription(description);
+    .setDescription(description)
 }
 
 export function infoEmbed(title: string, description: string): EmbedBuilder {
   return createEmbed(Colors.WHITE)
     .setTitle(`${Emojis.DOT}  ${title}`)
-    .setDescription(description);
+    .setDescription(description)
 }

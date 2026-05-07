@@ -4,37 +4,36 @@ import {
   ActionRowBuilder,
   ButtonBuilder,
   ButtonStyle,
-} from "discord.js";
-import { Command } from "../utils/types";
-import { createEmbed, Colors, Emojis } from "../utils/embeds";
-import { getOrCreateConfig } from "../config/GuildConfig";
-import { t } from "../utils/i18n";
-
+} from 'discord.js'
+import { Command } from '../utils/types'
+import { createEmbed, Colors, Emojis } from '../utils/embeds'
+import { getOrCreateConfig } from '../config/GuildConfig'
+import { t } from '../utils/i18n'
 
 const INVITE_URL =
-  "https://discord.com/oauth2/authorize?client_id=1500944923560509450&permissions=8&integration_type=0&scope=bot+applications.commands";
+  'https://discord.com/oauth2/authorize?client_id=1500944923560509450&permissions=8&integration_type=0&scope=bot+applications.commands'
 
 export const invite: Command = {
   data: new SlashCommandBuilder()
-    .setName("invite")
+    .setName('invite')
     .setDescription("Get the invite link / Obtenir le lien d'invitation"),
 
   async execute(interaction: ChatInputCommandInteraction) {
-    const config = await getOrCreateConfig(interaction.guildId!);
-    const lang = config.lang;
+    const config = await getOrCreateConfig(interaction.guildId!)
+    const lang = config.lang
 
     const embed = createEmbed(Colors.WHITE)
-      .setTitle(`${Emojis.INVITE}  ${t(lang, "invite_title")}`)
-      .setDescription(t(lang, "invite_desc"));
+      .setTitle(`${Emojis.INVITE}  ${t(lang, 'invite_title')}`)
+      .setDescription(t(lang, 'invite_desc'))
 
     const button = new ButtonBuilder()
-      .setLabel(t(lang, "invite_button"))
+      .setLabel(t(lang, 'invite_button'))
       .setURL(INVITE_URL)
       .setStyle(ButtonStyle.Link)
-      .setEmoji("🎓");
+      .setEmoji('🎓')
 
-    const row = new ActionRowBuilder<ButtonBuilder>().addComponents(button);
+    const row = new ActionRowBuilder<ButtonBuilder>().addComponents(button)
 
-    await interaction.reply({ embeds: [embed], components: [row] });
+    await interaction.reply({ embeds: [embed], components: [row] })
   },
-};
+}
