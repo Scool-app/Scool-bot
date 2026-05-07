@@ -1,11 +1,9 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logos/logo-dark.png">
-    <img alt="Scool Bot Logo" src="assets/logos/logo-light.png" width="128">
+    <img alt="Scool Bot Logo" src="src/logos/logo.png" width="128">
   </picture>
 </p>
-
-<h1 align="center">Scool Bot</h1>
 
 <p align="center">
   <strong>Your first-rate Discord bot for monitoring school life.</strong>
