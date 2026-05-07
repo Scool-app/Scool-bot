@@ -46,7 +46,6 @@ client.once('ready', (c) => {
 
 client.on('guildCreate', onGuildCreate)
 client.on('interactionCreate', createInteractionHandler(commands))
-
 ;(async () => {
   try {
     console.log('[Scool] Connecting to MongoDB...')

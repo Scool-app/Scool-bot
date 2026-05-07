@@ -8,7 +8,7 @@ export const translations = {
 
     info_title: 'À propos de Scool',
     info_desc:
-      "Scool est l'outil scolaire tout-en-un lié à **scool.qzz.io**.\nOrganise ta vie académique directement depuis Discord.",
+      "Scool est l'outil scolaire tout-en-un lié à **scool.qzz.io**.\nOrganise ta vie scolaire directement depuis Discord.",
     info_field_version: 'Version',
     info_field_tsversion: 'ts-node -v',
     info_field_status: 'Statut',
@@ -20,13 +20,13 @@ export const translations = {
     help_desc: 'Voici toutes les commandes Scool disponibles pour le moment.',
     help_field_general: 'Général',
     help_field_general_value:
-      '`/ping` — Latence du bot\n`/info` — Informations sur Scool\n`/invite` — Inviter Scool\n`/soon` — Fonctionnalités à venir',
+      '`/ping` - Latence du bot\n`/info` - Informations sur Scool\n`/invite` - Inviter Scool\n`/soon` - Fonctionnalités à venir',
     help_field_admin: 'Administration',
-    help_field_admin_value: '`/setup` — Configurer Scool sur ce serveur',
+    help_field_admin_value: '`/setup` - Configurer Scool sur ce serveur',
 
     soon_title: 'Bientôt disponible',
     soon_desc:
-      'De nombreuses fonctionnalités arrivent bientôt dans le cadre de **scool.qzz.io**.\nReste connecté !',
+      'De nombreuses fonctionnalités arrivent bientôt.\nReste connecté !',
     soon_field_planned: 'Fonctionnalités prévues',
     soon_field_planned_value:
       '📅 Agenda scolaire\n📝 Gestionnaire de devoirs\n📊 Suivi des notes\n👥 Espaces de classe\n🔔 Rappels intelligents',
@@ -36,7 +36,7 @@ export const translations = {
       'Ajoute Scool à ton serveur et équipe ta communauté avec des outils scolaires.',
     invite_button: 'Inviter Scool',
 
-    setup_title: 'Configuration — Scool',
+    setup_title: 'Configuration - Scool',
     setup_desc: 'Configure Scool pour ce serveur.',
     setup_lang_updated: 'Langue mise à jour',
     setup_lang_value: (lang: string) => `Langue définie sur **${lang}**`,
@@ -98,9 +98,9 @@ export const translations = {
     help_desc: 'Here are all the Scool commands currently available.',
     help_field_general: 'General',
     help_field_general_value:
-      '`/ping` — Bot latency\n`/info` — About Scool\n`/invite` — Invite Scool\n`/soon` — Upcoming features',
+      '`/ping` - Bot latency\n`/info` - About Scool\n`/invite` - Invite Scool\n`/soon` - Upcoming features',
     help_field_admin: 'Administration',
-    help_field_admin_value: '`/setup` — Configure Scool on this server',
+    help_field_admin_value: '`/setup` - Configure Scool on this server',
 
     soon_title: 'Coming soon',
     soon_desc:
@@ -133,7 +133,7 @@ export const translations = {
       role: string,
       logs: string,
     ) =>
-      `🌐 **Language** — ${lang}\n📢 **Announcements** — ${channel}\n🛡️ **Admin role** — ${role}\n📋 **Logs** — ${logs}`,
+      `🌐 **Language** - ${lang}\n📢 **Announcements** - ${channel}\n🛡️ **Admin role** - ${role}\n📋 **Logs** - ${logs}`,
 
     welcome_title: "Hello, I'm Scool!",
     welcome_desc:
