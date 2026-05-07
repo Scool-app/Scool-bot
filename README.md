@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logos/logo-dark.png">
+    <source media="(prefers-color-scheme: dark)" srcset="src/logos/logo.png">
     <img alt="Scool Bot Logo" src="src/logos/logo.png" width="128">
   </picture>
 </p>
