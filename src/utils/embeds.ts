@@ -33,14 +33,8 @@ export function createEmbed(
   return new EmbedBuilder()
     .setColor(color)
     .setFooter({
-<<<<<<< HEAD
       text: "Scool · scool.qzz.io",
       iconURL: "https://cdn.discordapp.com/app-icons/1500944923560509450/689515c8752ca5ef0e25d0028e593c6f.png?size=64",
-=======
-      text: 'Scool · scoolapp.fr',
-      iconURL:
-        'https://cdn.discordapp.com/app-icons/1500944923560509450/689515c8752ca5ef0e25d0028e593c6f.png?size=64',
->>>>>>> 4e0ee998d9588fd2c4098ee1baa878a4cd8d2e3b
     })
     .setTimestamp()
 }
