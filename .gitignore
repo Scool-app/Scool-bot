@@ -1,23 +1,61 @@
-.env
-
+```
+# Dependencies
 node_modules/
-package-lock.json
-bun.lock
 
+# Build outputs
 dist/
 build/
+target/
 
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 *.log
-logs/
-
+*.tmp
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
 
+# TypeScript/JavaScript
+*.tsbuildinfo
+*.js.map
+*.jsx.map
+*.ts.map
+*.tsx.map
+
+# IDE
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+*.swp
+*.swo
 
-*.tsbuildinfo
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+```
