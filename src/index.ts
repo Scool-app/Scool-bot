@@ -38,7 +38,7 @@ client.once("ready", (c) => {
     activities: [
       {
         name: 'scool.qzz.io',
-        type: 3 
+        type: 5
       }
     ]
   });
